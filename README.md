@@ -1,4 +1,7 @@
-# make it run
+# robot arm
+robot arm based on the Adafruit PCA9685 board
+
+## make it run
 
 ```
 python server.py # server to receive commands
