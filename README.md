@@ -1,5 +1,5 @@
 # robot arm
-robot arm using hobby servos controlled by a Raspberry Pi with an [Adafruit PCA9685 board](https://www.adafruit.com/product/815)
+robot arm using hobby servos controlled by a Raspberry Pi with an [Adafruit PCA9685 servo controller board](https://www.adafruit.com/product/2327)
 
 ## make it run
 
