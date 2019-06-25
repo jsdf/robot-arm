@@ -1,0 +1,15 @@
+//defaults:
+// "7": 300, // rotate base (mid=300)
+// "8": 300, // arm bottom joint  (mid=300)
+// "10": 320, // arm middle joint (mid=320)
+// "11": 300, // tilt claw (mid=300)
+// "13": 300, // rotate claw (mid=300)
+// "15": 300  // close claw (mid=300)
+{
+  "7": 300, // rotate base (mid=300)
+  "8": 300, // arm bottom joint  (mid=300)
+  "10": 320, // arm middle joint (mid=320)
+  "11": 300, // tilt claw (min=150, mid=300, max=500)
+  "13": 300, // rotate claw (mid=300)
+  "15": 300 // close claw (mid=300)
+}

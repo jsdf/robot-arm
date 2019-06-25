@@ -1,18 +1,26 @@
-# Adafruit Python PCA9685
-Python code to use the PCA9685 PWM servo/LED controller with a Raspberry Pi or BeagleBone black.
+# make it run
 
-## Installation
+```
+python server.py # server to receive commands
+python arm.py # arm control daemon
+```
 
-To install the library from source (recommended) run the following commands on a Raspberry Pi or other Debian-based OS system:
 
-    sudo apt-get install git build-essential python-dev
-    cd ~
-    git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git
-    cd Adafruit_Python_PCA9685
-    sudo python setup.py install
+## troubleshooting
+make sure i2c is working;
+```
+sudo watch -n0.2 i2cdetect -y 1
+```
 
-Alternatively you can install from pip with:
-
-    sudo pip install adafruit-pca9685
-
-Note that the pip install method **won't** install the example code.
+if everything is working, will print
+```
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: 70 -- -- -- -- -- -- --
+```
